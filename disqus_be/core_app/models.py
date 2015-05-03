@@ -3,6 +3,8 @@ from django.db import models
 from django.utils import timezone
 from core_app import utils
 
+# create our model Comment
+
 class Comment(models.Model):
 
     url = models.CharField(max_length=1000, default='')

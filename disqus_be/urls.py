@@ -8,6 +8,8 @@ from disqus_be.core_app.api import CommentResource
 
 comment_resource = CommentResource()
 
+# define our resource urls
+
 urlpatterns = patterns('',
                        # Examples:
                        # url(r'^$', 'bproject.views.home', name='home'),

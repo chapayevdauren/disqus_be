@@ -6,6 +6,8 @@ from tastypie import fields
 from core_app import utils
 from django_gravatar.helpers import get_gravatar_url
 
+# create comment resource for api
+
 class CommentResource(ModelResource):
 
     url = fields.CharField(attribute="url")
