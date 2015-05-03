@@ -11,8 +11,6 @@ def test_url_parse1():
         ("http://google.kz", "google.kz/"),
         ("google.kz", "google.kz/"),
         ("google.kz/index.html", "google.kz/index.html"),
-    ]
-    for tst, ans in samples:
         res = utils.clear_uri(tst)
         expect(res).should.be.equal(ans)
 

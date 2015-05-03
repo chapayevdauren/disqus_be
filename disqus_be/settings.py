@@ -21,7 +21,7 @@ sys.path.append(os.path.join(BASE_DIR, "disqus_be"))
 SECRET_KEY = 'p9i0f+_ctqev7w)cmv#h!+e4mkn$-3rf2yjf!&%(!ynk(2opg9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 
@@ -38,7 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tastypie',
-    'core_app')
+    'core_app',
+    'django_gravatar')
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
